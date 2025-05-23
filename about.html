@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: 'Cormorant Garamond', serif;
+      background: linear-gradient(45deg, rgb(0, 46, 58), rgb(0, 76, 95), black);
+      width: 100%;
+    }
+
+    .aboutus-full {
+      margin-top: 100px;
+      width: 100%;
+      min-height: 100vh;
+      /* background: linear-gradient(45deg, rgb(0, 46, 58), rgb(0, 76, 95), black); */
+      padding: 20px;
+      font-family: 'Cormorant Garamond', serif;
+     
+     
+ 
+
+
+
+
+    }
+
+    .container {
+      
+      width: 80%;
+      margin: auto;
+      padding-top: 40px;
+    }
+
+    .heading {
+      text-align: center;
+      color: #fff;
+      font-size: 40px;
+      margin-bottom: 60px;
+      transform: translateY(-30px) scale(0.8);
+      animation: logoEntry 1.2s ease-out forwards;
+      animation-delay: 0.1s;
+    }
+
+    @keyframes logoEntry {
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .heading p {
+      font-size: 20px;
+      color: #ddd;
+    }
+
+    .image-section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      align-items: center;
+    }
+
+    .content {
+      width: 45%;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.541);
+      border-radius: 8px;
+      color: #fff;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .content h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .content h3:hover{
+        transform: scale(1.1);
+    transition: 1.5s;
+    }
+    .content p {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+   
+    .left {
+      flex-direction: row-reverse;
+    }
+
+    .right {
+      flex-direction: row;
+    }
+
+    .about-img {
+      float: right;
+      width: 40%;
+      position: relative;
+      z-index: 100;
+    }
+
+    .about-img img {
+      width: 350px;
+      height: 400px;
+      position: relative;
+      z-index: 100;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .border {
+      position: absolute;
+      height: 400px;
+      width: 350px;
+      border: 2px solid #fff;
+      z-index: 10;
+      top: 30px;
+      left: 30px;
+      animation: rotateLoop 7s linear infinite;
+      border-radius: 5px;
+    }
+
+    @keyframes rotateLoop {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .image-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-img {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      .about-img img,
+      .border {
+        width: 80%;
+        height: auto;
+      }
+
+      .content {
+        width: 80%;
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .heading {
+        font-size: 20px;
+      }
+
+      .heading p {
+        font-size: 12px;
+      }
+
+      .content h3 {
+        font-size: 15px;
+      }
+
+      .content p {
+        font-size: 14px;
+      }
+    }
+    @media (hover: none) {
+  .content p:hover, .content h3:hover {
+    transform: none;
+  }
+}
+/* footer */
+:root {
+    --color-light: #F1EFEC;
+    --color-beige: #a2b1c6;
+    --color-navy: #123458;
+    --color-black: #030303;
+  }
+
+footer {
+  background: linear-gradient(45deg, rgb(0, 46, 58), rgb(0, 76, 95), black);
+    border-bottom-left-radius: 200px;
+
+}
+
+button {
+   background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+    width: 100px; 
+    height: 60px;
+    width: 100px;
+    align-items: center;
+    margin: 20px 5px;
+    background-color: var(--color-black);
+    border-radius: 5px;
+
+}
+
+button:hover {
+  
+  background-color: #000000;
+  box-shadow: 0 0 5px rgb(255, 255, 255),
+  0 0 0px rgb(0, 0, 0);
+  
+}
+
+.footer-heading {
+    color: white;
+    font-size: xx-large;
+
+}
+.icons{
+    font-size: x-large;
+    color: white;
+ } 
+ /* .icons:hover{
+  color: black;
+ } */
+ .icons i:hover{
+    color: #000000;
+    text-shadow: 0 0 5px rgb(255, 255, 255),
+     0 0 0px rgb(0, 0, 0);
+  
+}
+ .footer-para{
+color: white;
+ }
+ 
+
+ .main-navbar {
+  width: 100%;
+  height: 70px;
+  margin-top: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-navbar ul.main-menu li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+}
+
+.main-logo {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.main-logo img {
+  height: 40px;
+  width: 80px;
+  transform: translateY(-30px) scale(0.8);
+  animation: logoEntry 1.2s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes logoEntry {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.main-navbar ul.main-menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.main-navbar li a:hover {
+  text-shadow: 0 0 15px #fff, 0 0 15px #fff;
+  transition: 0.7s;
+}
+
+.main-navbar a:hover {
+  color: #fff;
+}
+
+.main-hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+.main-hamburger:hover {
+  text-shadow: 0 0 15px #fff, 0 0 15px #fff;
+  transition: 0.8s;
+}
+
+#sideHamburgerIcon:hover {
+  color: white;
+  transition: 0.8s;
+}
+
+.main-sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  height: 100%;
+  width: 250px;
+  background: linear-gradient(45deg, #000, #004c5f, #000);
+  padding: 40px 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: 0.4s ease;
+  z-index: 999;
+}
+
+.main-sidebar.active {
+  left: 0;
+}
+
+.main-sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.main-sidebar a:hover {
+  color: #fff;
+  text-shadow: 0 0 15px #fff, 0 0 15px #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+  transition: 1s;
+}
+
+.main-logo-side img {
+  height: 30px;
+  width: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+.main-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #000;
+}
+
+.main-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 998;
+}
+
+.main-overlay.active {
+  display: block;
+}
+
+
+@media (max-width: 929px) {
+    .main-navbar ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-navbar ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        
+        }
+        .main-hamburger {
+               display: block; 
+              }
+        
+              .search-box {
+                display: none;
+              }
+        
+              .icons {
+                display: none;
+              } 
+        
+            }
+
+
+ 
+  </style>
+</head>
+<body>
+  <div class="main-navbar" id="mainNavbar">
+    <div class="main-logo">
+      <img src="assets/images/logo1.png" alt=""> 
+      <img src="assets/images/logo2.png" alt="">
+    </div>
+    <ul class="main-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  
+    <div class="main-hamburger" id="mainHamburger">
+      <i class="fa fa-bars"></i>
+    </div>
+  
+    <div class="main-sidebar" id="mainSidebar">
+      <div class="main-logo-side">
+        <img src="assets/images/logo1.png" alt=""> 
+        <img src="assets/images/logo2.png" alt="">
+      </div>
+      <div class="main-close-btn" id="mainCloseBtn">
+        <i id="sideHamburgerIcon" class="fa fa-bars"></i>
+      </div>
+      <br>
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  
+    <div class="main-overlay" id="mainOverlay"></div>
+  </div>
+
+  <div class="aboutus-full">
+    <div class="container">
+      <div class="heading">
+        <h1>About Us</h1>
+        <p>Learn more about us and our journey</p>
+      </div>
+
+      <div class="image-section left">
+        <div class="about-img">
+          <div class="border"></div>
+          <img src="assets/images/abtpasion.webp" alt="Our Passion" />
+        </div>
+        <div class="content">
+          <h3>Our Passion</h3>
+          <p>We believe in providing the best quality gear for explorers. Our passion is making sure every adventurer has what they need to succeed on their journey.</p>
+        </div>
+      </div>
+
+      <div class="image-section right">
+        <div class="about-img">
+          <div class="border"></div>
+          <img src="assets/images/abtmission.jpg" alt="Our Mission" />
+        </div>
+        <div class="content">
+          <h3>Our Mission</h3>
+          <p>Our mission is to inspire and enable adventure by providing products that are durable, innovative, and environmentally responsible.</p>
+        </div>
+      </div>
+
+      <div class="image-section left">
+        <div class="about-img">
+          <div class="border"></div>
+          <img src="assets/images/abtvision.jpg" alt="Our Vision" />
+        </div>
+        <div class="content">
+          <h3>Our Vision</h3>
+          <p>We envision a world where everyone has the opportunity to explore, discover, and connect with nature through our products.</p>
+        </div>
+      </div>
+
+      <div class="image-section right">
+        <div class="about-img">
+          <div class="border"></div>
+          <img src="assets/images/abtsustain.jpg" alt="Sustainability" />
+        </div>
+        <div class="content">
+          <h3>Sustainability</h3>
+          <p>We are committed to reducing our environmental footprint and sourcing materials that are sustainable and eco-friendly.</p>
+        </div>
+      </div>
+
+      <div class="image-section left">
+        <div class="about-img">
+          <div class="border"></div>
+          <img src="assets/images/abtteam.jpg" alt="Our Team" />
+        </div>
+        <div class="content">
+          <h3>Our Team</h3>
+          <p>Our team is made up of passionate individuals who share a love for adventure and a desire to make a positive impact on the world.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- place footer here -->
+<footer class="py-5 mt-auto">
+  <div class="container">
+      <div class="row gy-4">
+          <div class="col-6 col-md-3">
+              <h3 class="footer-heading">About Us</h3>
+              <ul class="nav flex-column link">
+                  <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
+                  <li class="nav-item mb-2"><a href="product.html" class="nav-link p-0">Product</a></li>
+                  <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0">Contact</a></li>
+              </ul>
+          </div>
+  
+          <div class="col-6 col-md-3 link">
+              <h3 class="footer-heading">Products</h3>
+              <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Tours</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Destinations</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Booking</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Support</a></li>
+              </ul>
+          </div>
+  
+          <div class="col-12 col-md-6">
+              <h5 class="footer-heading">We value your feedback!</h5>
+              <p class="footer-para">Help us improve your shopping experience. Whether it's a suggestion, a problem you
+                  faced, or something you love—let us know!</p>
+              <form class="d-flex flex-column flex-sm-row gap-2">
+                  <input type="text" class="form-control" placeholder="Subscribe here..." required>
+                  <button class="button text-light"  type="submit">Submit</button>
+              </form>
+          </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 footer-bottom">
+          <p class="mb-2 mb-sm-0" style="color: white;">&copy; 2025 Company, Inc. All rights reserved.</p>
+          <ul class=" icons list-unstyled d-flex justify-content-around align-items-end gap-2 mb-0">
+              <li><a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+              <li><a class="nav-link " href="#"><i class="fa fa-facebook-square text" aria-hidden="true"></i><a>
+              </li>
+              <li><a class="nav-link  " href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+              <li><a class="nav-link " href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i><a></li>
+              <li><a class="nav-link " href="#"><a><i class="fa fa-phone-square" aria-hidden="true"></i></li>
+  
+  
+          </ul>
+      </div>
+  
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+  crossorigin="anonymous"></script>
+  
+  
+
+
+
+  <!-- <script src="assets/js/script.js"></script> -->
+
+
+  <script >const hamburger = document.getElementById("mainHamburger");
+    const sidebar = document.getElementById("mainSidebar");
+    const overlay = document.getElementById("mainOverlay");
+    
+    hamburger.addEventListener("click", () => {
+      sidebar.classList.add("active");
+      overlay.classList.add("active");
+    });
+    
+    overlay.addEventListener("click", () => {
+      sidebar.classList.remove("active");
+      overlay.classList.remove("active");
+    });
+    
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("mainNavbar");
+    
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+      if (scrollTop > lastScrollTop) {
+        navbar.style.top = "-100px"; // hide on scroll down
+      } else {
+        navbar.style.top = "0"; // show on scroll up
+      }
+    
+      lastScrollTop = scrollTop;
+    });
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
